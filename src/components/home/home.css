@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* body {
+    background: #1845a8;
+} */
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.2s;
+}
+
+@keyframes show-content {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.ativa a {
+    color: #F07A20;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #ffffff;
+    gap: 50px;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.6s;
+}
+
+.inicio-info h1 {
+    font-size: 55px;
+}
+
+.inicio-info h2 {
+    display: inline-block;
+    font-size: 32px;
+    margin-top: -10px;
+}
+
+.inicio-info h2 span {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: .7px #F09C4A;
+    animation: display-text 16s linear infinite;
+    animation-delay: calc(-4s * var(--i));
+}
+
+@keyframes display-text {
+    25%, 100% {
+        display: none;
+    }
+}
+
+.inicio-info h2 span::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid #F09C4A;
+    color: #F09C4A;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill-text 4s linear infinite;
+}
+
+@keyframes fill-text {
+    10%, 100% {
+        width: 0;
+    }
+
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+.inicio-info p {
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+
+.inicio-info .btn-sci {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #F07A20;
+    border: 2px solid #F07A20;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #F07A20;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #F07A20;
+    box-shadow: none;
+}
+
+.inicio-info .btn-sci .sci {
+    margin-left: 20px;
+}
+
+.inicio-info .btn-sci .sci a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #F07A20;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #F07A20;
+    margin: 0 8px;
+    transition: .5s;
+}
+
+.inicio-info .btn-sci .sci a:hover {
+    background: #F07A20;
+    color: #1845a8;
+    box-shadow: 0 0 10px #F07A20;
+}
+
+.inicio-img .img-box {
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.inicio-img .img-box::before,
+.inicio-img .img-box::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent, transparent, transparent, #F07A20);
+    transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite;
+}
+
+.inicio-img .img-box::after {
+    animation-delay: -5s;
+}
+
+@keyframes rotate-border {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.inicio-img .img-box .img-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #1845a8;
+    border-radius: 50%;
+    border: .1px solid #1845a8;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.inicio-img .img-box .img-item img {
+    position: absolute;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+}
+
+.animacao-barras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+}
+
+.animacao-barras .barra {
+    width: 100%;
+    height: 100%;
+    background: #1845a8;
+    transform: translateY(-100%);
+    animation: show-bars .5s ease-in-out forwards;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes show-bars {
+    100% {
+        transform: translateY(0%);
+    }
+}
