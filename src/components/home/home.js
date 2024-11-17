@@ -8,13 +8,13 @@ const Home = () => {
     <div>
       {/* Navbar */}
       <nav className="navbar">
-        <a href="#" className="logo">Portfólio</a>
+        <a className="logo">Portfólio</a>
         <ul>
-          <li className="ativo"><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Portfólio</a></li>
-          <li><a href="#">Serviço</a></li>
-          <li><a href="#">Contato</a></li>
+          <li className="ativo"><a>Início</a></li>
+          <li><a>Sobre</a></li>
+          <li><a>Portfólio</a></li>
+          <li><a>Serviço</a></li>
+          <li><a>Contato</a></li>
         </ul>
       </nav>
 
@@ -51,7 +51,7 @@ const Home = () => {
             Nossa plataforma é uma solução inclusiva de navegação, projetada especialmente para ajudar cadeirantes a encontrarem rotas acessíveis em suas cidades. Com um sistema de GPS avançado, a plataforma identifica locais adaptados e mostra a rota ideal para chegar a cada destino com segurança e conforto. Além de orientar sobre acessibilidade, a interface é simples e prática, permitindo que os usuários explorem facilmente pontos de interesse inclusivos e planejem seus trajetos com confiança.
           </p>
           <div className="btn-sci">
-            <a href="#" className="btn">Download</a>
+            <a className="btn">Download</a>
             <div className="sci">
               <a href="https://www.behance.net/mobilidacessiv" target="_blank">
                 <i className="bx bxl-behance"></i>
