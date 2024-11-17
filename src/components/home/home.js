@@ -53,13 +53,13 @@ const Home = () => {
           <div className="btn-sci">
             <p className="btn">Download</p>
             <div className="sci">
-              <a href="https://www.behance.net/mobilidacessiv" target="_blank">
+              <a href="https://www.behance.net/mobilidacessiv" target="_blank" rel="noreferrer">
                 <i className="bx bxl-behance"></i>
               </a>
-              <a href="https://github.com/Mobilidade-Acessivel" target="_blank">
+              <a href="https://github.com/Mobilidade-Acessivel" target="_blank" rel="noreferrer">
                 <i className="bx bxl-github"></i>
               </a>
-              <a href="https://www.instagram.com/mobilidade.acessivel" target="_blank">
+              <a href="https://www.instagram.com/mobilidade.acessivel" target="_blank" rel="noreferrer">
                 <i className="bx bxl-instagram"></i>
               </a>
             </div>
