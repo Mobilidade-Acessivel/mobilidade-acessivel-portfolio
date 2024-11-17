@@ -9,6 +9,21 @@ a {
     text-decoration: none;
 }
 
+.logo {
+    color: white;
+}
+
+.botoes p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botoes {
+    position: relative;
+    right: 200px;
+}
+
 .navbar {
     position: fixed;
     left: 0;
